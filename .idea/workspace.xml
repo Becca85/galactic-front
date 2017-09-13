@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b919d7b8-9ce6-4f94-acbb-4bae52d24c55" name="Default" comment="" />
+    <list default="true" id="b919d7b8-9ce6-4f94-acbb-4bae52d24c55" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/create-unity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-planets.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/view-unities.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/components.js" afterPath="$PROJECT_DIR$/js/components/components.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/view-planets.js" afterPath="$PROJECT_DIR$/js/components/view-planets.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/js/view-unities.js" afterPath="$PROJECT_DIR$/js/components/view-unities.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vendor/css/style.css" afterPath="$PROJECT_DIR$/style/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +44,7 @@
         </entry>
       </file>
       <file leaf-file-name="view-planets.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/view-planets.js">
+        <entry file="file://$PROJECT_DIR$/js/components/view-planets.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
@@ -47,7 +56,7 @@
         </entry>
       </file>
       <file leaf-file-name="components.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/components.js">
+        <entry file="file://$PROJECT_DIR$/js/components/components.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -57,7 +66,7 @@
         </entry>
       </file>
       <file leaf-file-name="view-unities.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/view-unities.js">
+        <entry file="file://$PROJECT_DIR$/js/components/view-unities.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
@@ -67,7 +76,7 @@
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/css/style.css">
+        <entry file="file://$PROJECT_DIR$/style/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1343">
               <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="13" />
@@ -77,7 +86,7 @@
         </entry>
       </file>
       <file leaf-file-name="view-unities.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-unities.html">
+        <entry file="file://$PROJECT_DIR$/js/template/view-unities.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="530">
               <caret line="90" column="41" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="41" />
@@ -87,7 +96,7 @@
         </entry>
       </file>
       <file leaf-file-name="view-planets.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/view-planets.html">
+        <entry file="file://$PROJECT_DIR$/js/template/view-planets.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="634">
               <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="41" />
@@ -97,7 +106,7 @@
         </entry>
       </file>
       <file leaf-file-name="create-unity.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create-unity.html">
+        <entry file="file://$PROJECT_DIR$/js/template/create-unity.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="43" />
@@ -131,6 +140,9 @@
       <find>false</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -139,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/dao/planets-dao.js" />
         <option value="$PROJECT_DIR$/view-planets.html" />
         <option value="$PROJECT_DIR$/js/view-planets.js" />
@@ -148,6 +159,7 @@
         <option value="$PROJECT_DIR$/vendor/css/style.css" />
         <option value="$PROJECT_DIR$/create-unity.html" />
         <option value="$PROJECT_DIR$/js/components.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -166,6 +178,7 @@
     <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -218,7 +231,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -235,10 +248,6 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -253,6 +262,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\DEV\EmpireGalactique\EmpireGalactique\js\components" />
+      <recent name="C:\DEV\EmpireGalactique\EmpireGalactique\js\template" />
+      <recent name="C:\DEV\EmpireGalactique\EmpireGalactique\style" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\DEV\EmpireGalactique\EmpireGalactique" />
       <recent name="C:\DEV\EmpireGalactique\EmpireGalactique\js" />
@@ -751,12 +765,12 @@
       <option name="presentableId" value="Default" />
       <updated>1505207731316</updated>
       <workItem from="1505207732832" duration="15237000" />
-      <workItem from="1505287358528" duration="1226000" />
+      <workItem from="1505287358528" duration="1963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16463000" />
+    <option name="totallyTimeSpent" value="17200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
@@ -769,7 +783,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -825,7 +839,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components.js">
+    <entry file="file://$PROJECT_DIR$/js/components/components.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -833,7 +847,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/view-unities.js">
+    <entry file="file://$PROJECT_DIR$/js/components/view-unities.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
@@ -841,7 +855,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/css/style.css">
+    <entry file="file://$PROJECT_DIR$/style/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
           <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="13" />
@@ -849,7 +863,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-unities.html">
+    <entry file="file://$PROJECT_DIR$/js/template/view-unities.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="90" column="41" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="41" />
@@ -857,7 +871,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-planets.html">
+    <entry file="file://$PROJECT_DIR$/js/template/view-planets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="82" column="41" lean-forward="true" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="41" />
@@ -865,7 +879,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create-unity.html">
+    <entry file="file://$PROJECT_DIR$/js/template/create-unity.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
           <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
@@ -876,7 +890,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/view-planets.js">
+    <entry file="file://$PROJECT_DIR$/js/components/view-planets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
@@ -894,7 +908,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/css/style.css">
+    <entry file="file://$PROJECT_DIR$/style/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
           <caret line="79" column="13" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="13" />
@@ -902,7 +916,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-unities.html">
+    <entry file="file://$PROJECT_DIR$/js/template/view-unities.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="530">
           <caret line="90" column="41" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="41" />
@@ -910,7 +924,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view-planets.html">
+    <entry file="file://$PROJECT_DIR$/js/template/view-planets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
           <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="41" />
@@ -918,7 +932,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/view-unities.js">
+    <entry file="file://$PROJECT_DIR$/js/components/view-unities.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
@@ -926,7 +940,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create-unity.html">
+    <entry file="file://$PROJECT_DIR$/js/template/create-unity.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="39" selection-end-line="73" selection-end-column="43" />
@@ -937,7 +951,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/components.js">
+    <entry file="file://$PROJECT_DIR$/js/components/components.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -955,7 +969,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/view-planets.js">
+    <entry file="file://$PROJECT_DIR$/js/components/view-planets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
