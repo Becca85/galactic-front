@@ -10,8 +10,16 @@ var UnitiesDao = {
     getUnitiesTypes: function () {
         return axios.get(wsUrl + 'unities/types')
     },
-    create:function () {
-        axios.putUnity(wsUrl + 'unities/unity')
+    createUnity:function (planetId, unityType) {
+
+        return axios.put(wsUrl + 'planet/' + planetId +'/unities',
+            {
+                unityType: unityType
+            })
+
+    },
+    getUnitiesPlanet: function (planetId) {
+        return axios.get(wsUrl + 'planet/' + planetId +'/unities')
 
     }
 }

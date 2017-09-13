@@ -43,16 +43,32 @@ td, th {
     color: white;
 }
 
-optionSelect:focus{
-    text-decoration: #6A0606;
+.select:hover{
+    background-color: #6A0606;
+}
+
+.optionSelect:hover{
+    background-color: #6A0606;
 }
 
 .btnCreate {
     background-color: #276E6E;
     color: white;
     border: solid 1px #062c33;
+    padding: 10px 70px;
 }
 
 .btnCreate:hover {
+    background-color: #6A0606;
+}
+
+.ReadUnities {
+    background-color: #276E6E;
+    color: white;
+    border: solid 1px #062c33;
+    padding: 10px 70px;
+}
+
+.ReadUnities:hover{
     background-color: #6A0606;
 }

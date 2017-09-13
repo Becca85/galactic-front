@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
   <head>
 
@@ -29,18 +29,21 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Connexion
+                      <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="view-planets.html">Planètes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="view-unities.html">Unités d'une planète</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="create-unity.html">Créer une unité</a>
+              </li>
+              <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
@@ -50,10 +53,17 @@
 
     <!-- Page Content -->
     <div class="container">
-      <div class="row">
+      <div class="row" id="view-unities">
+
+          <div class="col-md-12" >
+              <h3>Sélectionner une planète</h3>
+              <select v-model="selected.planet" class="select">
+                  <option v-for="planet in planets" v-bind:value="planet" class="optionSelect">{{ planet.name }}</option>
+              </select></br>
+              <button class="btn btn-success ReadUnities" @click="refresh()">Afficher les unités</button>
 
 
-          <div class="col-lg-12 text-center" id="view-unities">
+              <div class="col-lg-12 text-center">
           <h1 class="mt-5">Liste des unités</h1>
           <table>
             <thead>
@@ -78,8 +88,7 @@
             </thead>
 
             <tbody>
-            <!--{type: "orbital", name: "croiseur", level: 1, health: 400, attack: 300, isBuilding:true, productDelay: 0, ironCost: 30, plutoniumCost: 10,
-            goldCost: 100, speed:20, position: 34, goPlanet: 56, idPlanet: 18 , departureTime: 1300, isTravelling: 1700  },-->
+
            <tr v-for="unity in unities">
               <td>{{ unity.type }}</td>
               <td>{{ unity.name}}</td>
@@ -100,7 +109,7 @@
             </tr>
             </tbody>
           </table>
-            <button class="btn btn-success" @click="refresh()">Rafraîchir</button>
+
           </div>
 
       </div>
@@ -112,6 +121,9 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="vendor/vue/vue.js"></script>
+    <script src="vendor/axios/axios.js"></script>
+    <script src="js/dao/planets-dao.js"></script>
+    <script src="js/dao/unities-dao.js"></script>
     <script src="js/components/view-unities.js"></script>
 
   </body>
