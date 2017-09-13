@@ -9,5 +9,9 @@ if (!wsUrl) {
 var UnitiesDao = {
     getUnitiesTypes: function () {
         return axios.get(wsUrl + 'unities/types')
+    },
+    create:function () {
+        axios.putUnity(wsUrl + 'unities/unity')
+
     }
 }

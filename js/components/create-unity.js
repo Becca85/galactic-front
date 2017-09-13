@@ -21,7 +21,20 @@ var createUnity = new Vue({
         UnitiesDao.getUnitiesTypes()
             .then(function (r) {
                 self.types = r.data
-            })
+            }
+
+
+)
+
+       /* methods: {
+            create: function() {
+                var self = this;
+                self.unities = ?
+                UnitiesDao.putUnity()
+            }
+        }*/
+
+
 
         PlanetDao.getAllPlanets()
             .then(function (r) {
