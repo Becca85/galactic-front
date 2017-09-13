@@ -11,8 +11,8 @@
     <title>Créer une Unité</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../../style/css/style.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css">
 
     <!-- Custom styles for this template -->
 
@@ -53,14 +53,14 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-lg-12 text-center" >
+        <div class="col-lg-12 text-center" id="create-unity" >
             <h1 class="mt-5"> Créer une unité </h1>
           <!--<ul id="listePlanets" planet in planets>
             <li v-for="planet in planets">{{ planet.name}}</li>
           </ul>
             <button class="btn btn-success" @click="refresh()">Rafraîchir</button>-->
 
-            <div class="dropdown" style="margin-top: 100px" id="view-planets">
+            <!--<div class="dropdown" style="margin-top: 100px" id="view-planets">
               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Choisir une planète
                 <span class="caret"></span>
@@ -68,26 +68,33 @@
               <ul v-for="planet in planets" class="dropdown-menu" aria-labelledby="dropdownMenu1" >
                 <li >{{ planet.name}}</li>
               </ul>
-            </div>
+            </div>-->
 
 
-            <div class="col-lg-12" id="view-unities" >
-                <div class="dropdown" style="margin-top: 100px">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Choisir une unité
-                        <span class="caret"></span>
-                    </button>
-                    <ul v-for="unity in unities" class="dropdown-menu" aria-labelledby="dropdownMenu1" >
-                        <li >{{ unity.name}}</li>
-                    </ul>
+            <div class="col-lg-12">
+
+                <select v-model="selected.planet">
+                    <option v-for="planet in planets" v-bind:value="planet">{{ planet.name }}</option>
+                </select>
+
+                <div v-if="selected.planet">
+                    Nom de la planète : {{selected.planet.name}}
+                    Espace terrestre disponible : {{selected.planet.groundFreeSpace}}<br/>
+                    Espace orbital disponible : {{selected.planet.orbitalFreeSpace}}<br/>
                 </div>
 
-                <div>
-                    <p>{{unity.ironCost}}</p>
-                    <p>{{unity.plutoniumCost}}</p>
-                    <p>{{unity.goldCost}}</p>
-                    <p>{{ unity.productDelay}}</p>
+
+                <select v-model="selected.type">
+                    <option v-for="type in types" v-bind:value="type">{{ type.name }}</option>
+                </select>
+
+                <div v-if="selected.type">
+                    Coût en fer : {{selected.type.ironCost}}<br/>
+                    Coût en plutonium : {{selected.type.plutoniumCost}}<br/>
+                    Coût en or : {{selected.type.goldCost}}<br/>
+                    Temps de construction : {{selected.type.productDelay}}<br/>
                 </div>
+                <br/>
                 <button class="btn btn-success" @click="refresh()">Rafraîchir</button>
             </div>
 
@@ -96,15 +103,16 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="../../vendor/jquery/jquery.min.js"></script>
-    <script src="../../vendor/popper/popper.min.js"></script>
-    <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/vue"></script>
-    <script src="../../vendor/axios/axios.js"></script>
-    <script src="../dao/planets-dao.js"></script>
-    <script src="../components/view-planets.js"></script>
-    <script src="../components/view-unities.js"></script>
+    <script src="vendor/vue/vue.js"></script>
+    <script src="vendor/axios/axios.js"></script>
+    <script src="js/dao/planets-dao.js"></script>
+    <script src="js/dao/unities-dao.js"></script>
+    <script src="js/components/create-unity.js"></script>
+
 
   </body>
 
