@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Liste des unités pour une planete</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../EmpireGalactique/vendor/css/style.css">
+
+    <!-- Custom styles for this template -->
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">EMPIRE GALACTIQUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+
+
+          <div class="col-lg-12 text-center" id="view-unities">
+          <h1 class="mt-5">Liste des unités</h1>
+          <table>
+            <thead>
+            <tr>
+              <th >type d'unités</th>
+              <th>Nom de l'unité</th>
+              <th >niveau</th>
+              <th >taille</th>
+              <th >points de vie</th>
+              <th >Point d'attaque</th>
+              <th >Construction</th>
+              <th >Temps restant</th>
+              <th >coût en fer</th>
+              <th >coût en plutonium</th>
+              <th >coût en or</th>
+              <th >vitesse</th>
+              <th >position</th>
+              <th >destination</th>
+              <th >temps de trajet</th>
+              <th>En voyage</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <!--{type: "orbital", name: "croiseur", level: 1, health: 400, attack: 300, isBuilding:true, productDelay: 0, ironCost: 30, plutoniumCost: 10,
+            goldCost: 100, speed:20, position: 34, goPlanet: 56, idPlanet: 18 , departureTime: 1300, isTravelling: 1700  },-->
+           <tr v-for="unity in unities">
+              <td>{{ unity.type }}</td>
+              <td>{{ unity.name}}</td>
+              <td>{{ unity.level}}</td>
+               <td>{{ unity.size}}</td>
+              <td>{{ unity.health}}</td>
+              <td>{{ unity.attack}}</td>
+              <td>{{ unity.isBuilding}}</td>
+              <td>{{ unity.productDelay}}</td>
+              <td>{{ unity.ironCost}} </td>
+              <td>{{ unity.plutoniumCost}}</td>
+              <td>{{ unity.goldCost }}</td>
+              <td>{{ unity.speed }}</td>
+              <td>{{ unity.position }}</td>
+              <td>{{ unity.goPlanet }}, {{unities.idPlanet}}</td>
+              <td>{{ unity.departureTime }}</td>
+              <td>{{ unity.isTravelling }}</td>
+            </tr>
+            </tbody>
+          </table>
+            <button class="btn btn-success" @click="refresh()">Rafraîchir</button>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/view-unities.js"></script>
+
+  </body>
+
+</html>

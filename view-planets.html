@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Liste des planètes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../EmpireGalactique/vendor/css/style.css">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+      @media (min-width: 992px) {
+        body {
+          padding-top: 56px;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">EMPIRE GALACTIQUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" id="view-planets">
+          <h1 class="mt-5">Liste des planètes</h1>
+          {{ message }}
+          <table class="">
+            <thead>
+            <tr>
+              <th >Nom de planète</th>
+              <th >Coordonnées</th>
+                <th >Propriétaire</th>
+                <th >Espace terrestre libre</th>
+                <th >Espace orbital libre</th>
+                <th >Ressources diponibles en fer</th>
+                <th >Ressources dispnibles en plutonium</th>
+                <th >Ressoureces disponibles en or</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!--owner: "Fabien56", groundFreeSpace: 400, orbitalFreeSpace: 100, availableIron:1500, availablePlutonium: 1300, availableGold: 1700-->
+            <tr v-for="planet in planets">
+                <td>{{ planet.name }}</td>
+                <td> x{{ planet.coordX }}, y{{ planet.coordY }}</td>
+                <td>{{ planet.owner}}</td>
+                <td>{{ planet.groundFreeSpace}}</td>
+                <td>{{ planet.orbitalFreeSpace}}</td>
+                <td>{{ planet.availableIron}} fer</td>
+                <td>{{ planet.availablePlutonium}} plutonium</td>
+                <td>{{ planet.availableGold}} or</td>
+            </tr>
+            </tbody>
+          </table>
+            <button class="btn btn-success" @click="refresh()">Rafraîchir</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="vendor/axios/axios.js"></script>
+    <script src="js/dao/planets-dao.js"></script>
+  <script src="js/view-planets.js"></script>
+
+  </body>
+
+</html>
