@@ -7,12 +7,14 @@
 var createUnity = new Vue({
     el: '#create-unity',
     data: {
+        differences: {},
         selected: {
             type: null,
             planet: null
         },
         types : [],
-        planets: []
+        planets: [],
+
 
     },
     mounted : function () {
@@ -30,20 +32,71 @@ var createUnity = new Vue({
 
 
        methods: {
-            create: function() {
-                UnitiesDao.createUnity(this.selected.planet.id, this.selected.type.unityType)
-                    .then(function (r) {
-                        alert("unité créer")
+           create: function () {
+               UnitiesDao.createUnity(this.selected.planet.id, this.selected.type.unityType)
+                   .then(function (r) {
+                       alert("unité créer")
 
-                    })
-                    .catch(function (r) {
-                        alert("Erreur : l'unité n'a pas été créée")
-                    })
-            }
-        }
+                   })
+                   .catch(function (r) {
+                       alert("Erreur : l'unité n'a pas été créée")
+                   })
+           },
 
+           /*Fighter.class, Cruiser.class, Scout.class, Transporter.class*/
+           buildIsPossible: function () {
+               var possible = true;
+               if (this.selected.type.orbital) {
+                   possible = possible && (this.selected.planet.orbitalFreeSpace > this.selected.type.size);
+               } else {
+                   possible = possible && (this.selected.planet.groundFreeSpace > this.selected.type.size);
+               }
 
+               possible = possible && (
+                   this.selected.planet.availableIron > this.selected.type.ironCost &&
+                   this.selected.planet.availablePlutonium > this.selected.type.plutoniumCost &&
+                   this.selected.planet.availableGold > this.selected.type.goldCost)
 
+               return possible;
+           },
 
+           formatDelay: function (delay) {
+               var jours = Math.round(delay / 86400)
+               var heures = Math.round((delay % 86400) / 3600)
+               var minutes = Math.round((delay % 3600) / 60)
+               var secondes = Math.round((delay % 3600)% 60)
+
+               var zerofill = function (n) {
+                   return (n < 9) ? "0" + n : n;
+               }
+
+               return zerofill(jours) + " jour(s), " + zerofill(heures) + " heure(s), " + zerofill(minutes) + " minute(s) et " + zerofill(secondes)
+           },
+
+           updateDifferences: function () {
+               if (!this.selected.type || !this.selected.planet) {
+                   return;
+               }
+
+               if (this.selected.type.orbital) {
+                   var placeOnEarth = this.selected.planet.orbitalFreeSpace - this.selected.type.size
+               }
+               else {
+                   var placeOnOrbit = this.selected.planet.groundFreeSpace - this.selected.type.size
+               }
+               var diffF = this.selected.planet.availableIron - this.selected.type.ironCost
+               var diffP = this.selected.planet.availablePlutonium - this.selected.type.plutoniumCost
+               var diffO = this.selected.planet.availableGold - this.selected.type.goldCost
+
+               this.differences = {
+                   placeOnOrbit: placeOnOrbit,
+                   placeOnEarth: placeOnEarth,
+                   diffF: diffF,
+                   diffP: diffP,
+                   diffO: diffO
+               }
+           }
+
+       }
 
 })

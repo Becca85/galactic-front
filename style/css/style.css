@@ -47,6 +47,10 @@ td, th {
     background-color: #6A0606;
 }
 
+.error {
+    color: #c00;
+}
+
 .optionSelect:hover{
     background-color: #6A0606;
 }
