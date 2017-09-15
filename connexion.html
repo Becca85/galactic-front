@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Liste des planètes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/css/style.css">
+
+    <!-- Custom styles for this template -->
+    <style>
+      body {
+        padding-top: 54px;
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarCss">
+      <div class="container">
+        <a class="navbar-brand" href="#">EMPIRE GALACTIQUE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="connexion.html">Connexion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view-planets.html">Planètes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view-unities.html">Unités d'une planète</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="create-unity.html">Créer une unité</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container background">
+      <div class="row divRowConnexion">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 form-wrap ConnexionInscription">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabCI" role="tablist">
+            <li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Connexion</a></li>
+            <li role="presentation"><a href="#register" aria-controls="register" role="tab" data-toggle="tab">Créer un Compte</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content ">
+            <div role="tabpanel" class="tab-pane active titlePage" id="login">
+              <h3>Connexion à votre Compte</h3>
+              <hr>
+              <form role="form">
+                <label class="sr-only" for="player">Joueur</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-player"></i></span>
+                  <input type="text" class="form-control" id="player" placeholder="joueur" data-original-title="" title="">
+                </div>
+                <br>
+                <label class="sr-only" for="inputPassword">Mot de passe</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Mot de passe">
+                </div>
+                <!--<div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                    Se souvenir de moi
+                  </label>
+                </div>-->
+                <button type="submit" class="btn btn-primary pull-right">Envoyer</button>
+
+              </form>
+            </div>
+            <div role="tabpanel" class="tab-pane titlePage" id="register">
+              <h3>Créer un nouveau Compte</h3>
+              <hr>
+              <form role="form">
+                <label class="sr-only" for="player">Nom d'utilisateur</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-player"></i></span>
+                  <input type="text" class="form-control" id="player" placeholder="Nom d'utilisateur" data-original-title="" title="">
+                </div>
+                <br>
+                <label class="sr-only" for="email">Adresse Mail</label>
+                <!--<div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="email" class="form-control" id="email" placeholder="Adresse Mail" data-original-title="" title="">
+                </div>
+                <br>-->
+                <label class="sr-only" for="inputPassword">Mot de passe</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" id="password" placeholder="Mot de passe">
+                </div>
+                <br>
+                <label class="sr-only" for="inputPassword">Confirmation</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                  <input type="password" class="form-control" id="verification" placeholder="Confirmer le Mot de passe">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+
+</html>
