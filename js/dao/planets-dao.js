@@ -9,5 +9,9 @@ if (!wsUrl) {
 var PlanetDao = {
     getAllPlanets: function () {
         return axios.get(wsUrl + 'planets')
-    }
+    },
+	
+	getPlanetResources: function(planetId) {
+		return axios.get(wsUrl + 'planets/' + planetId + '/resources');
+	}
 }

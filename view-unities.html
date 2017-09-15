@@ -57,7 +57,7 @@
               <select v-model="selected.planet" class="select" @change="refresh()">
                   <option v-for="planet in planets" :value="planet" class="optionSelect">{{ planet.name }}</option>
               </select></br>
-              <!--<button class="btn btn-success ReadUnities" @click="refresh()">Afficher les unités</button>-->
+              <button class="btn btn-success ReadUnities" @click="refresh()">Afficher les unités</button>
 
 
               <div class="col-lg-12 text-center">
@@ -73,14 +73,8 @@
               <th >Point d'attaque</th>
               <th >Construction</th>
               <th >Temps restant</th>
-              <th >coût en fer</th>
-              <th >coût en plutonium</th>
-              <th >coût en or</th>
               <th >vitesse</th>
               <th >position</th>
-              <th >destination</th>
-              <th >temps de trajet</th>
-              <th>En voyage</th>
             </tr>
             </thead>
 
@@ -93,16 +87,10 @@
                <td>{{ unity.size}}</td>
               <td>{{ unity.health}}</td>
               <td>{{ unity.attack}}</td>
-              <td>{{ unity.isBuilding}}</td>
-              <td>{{ unity.productDelay}}</td>
-              <td>{{ unity.ironCost}} </td>
-              <td>{{ unity.plutoniumCost}}</td>
-              <td>{{ unity.goldCost }}</td>
-              <td>{{ unity.speed }}</td>
+              <td>{{ (unity.building) ? "En construction" : "" }}</td>
+              <td>{{ (unity.building) ? formatDelay(remaining[unity.id]) : "" }}</td>
+			  <td>{{ unity.speed }}</td>
               <td>{{ unity.position }}</td>
-              <td>{{ unity.goPlanet }}, {{unities.idPlanet}}</td>
-              <td>{{ unity.departureTime }}</td>
-              <td>{{ unity.isTravelling }}</td>
             </tr>
             </tbody>
           </table>
