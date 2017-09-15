@@ -78,19 +78,18 @@ var createUnity = new Vue({
                    return;
                }
 
-               if (this.selected.type.orbital) {
-                   var placeOnEarth = this.selected.planet.orbitalFreeSpace - this.selected.type.size
+               if (!this.selected.type.orbital) {
+                   var place = "Place restantes sur terre : " + (this.selected.planet.orbitalFreeSpace - this.selected.type.size)
                }
                else {
-                   var placeOnOrbit = this.selected.planet.groundFreeSpace - this.selected.type.size
+                   var place = "Place restantes en orbite : " + (this.selected.planet.groundFreeSpace - this.selected.type.size)
                }
-               var diffF = this.selected.planet.availableIron - this.selected.type.ironCost
-               var diffP = this.selected.planet.availablePlutonium - this.selected.type.plutoniumCost
-               var diffO = this.selected.planet.availableGold - this.selected.type.goldCost
+               var diffF =  "Ressources restantes en fer : " + (this.selected.planet.availableIron - this.selected.type.ironCost)
+               var diffP = "Ressources restantes en fer : " + (this.selected.planet.availablePlutonium - this.selected.type.plutoniumCost)
+               var diffO = "Ressources restantes en fer : " + (this.selected.planet.availableGold - this.selected.type.goldCost)
 
                this.differences = {
-                   placeOnOrbit: placeOnOrbit,
-                   placeOnEarth: placeOnEarth,
+                   place: place,
                    diffF: diffF,
                    diffP: diffP,
                    diffO: diffO

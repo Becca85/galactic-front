@@ -1,5 +1,5 @@
 body {
-    padding: 60px;
+
     background: white;
 }
 body {
@@ -26,14 +26,8 @@ td, th {
 }
 
 /* =====================================================
-======================= PAGE CREATE UNITY===============
+======================= Commun aux pages===============
  ======================================================*/
-
-.titlePage{
-    margin: 3% 3%;
-    text-align: center;
-}
-
 .select{
     width: 45%;
     border-radius: 8px;
@@ -41,18 +35,59 @@ td, th {
     border: solid 1px;
     background-color: #276E6E;
     color: white;
+    margin-bottom: 2%;
 }
 
 .select:hover{
     background-color: #6A0606;
 }
+/* =====================================================
+======================= PAGE CREATE UNITY===============
+ ======================================================*/
 
+.selectPlanet{
+    margin: 2% 2%;
+}
+
+
+
+/* =====================================================
+======================= PAGE CREATE UNITY===============
+ ======================================================*/
+.titlePage{
+    margin: 3% 3%;
+    text-align: center;
+    color:#03414F;
+}
+
+
+
+.reponseCalcul{
+    text-align: center;
+    margin-top: 2%;
+}
 .error {
+    font-size: xx-large;
     color: #c00;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 .optionSelect:hover{
     background-color: #6A0606;
+}
+
+.createUnity{
+    padding: 0px 0px 0px 25px !important;
+    text-align: center;
+}
+
+.titreDiff{
+
+}
+
+.contenuCreate{
+padding-left: 10% !important;
 }
 
 .btnCreate {
@@ -75,4 +110,11 @@ td, th {
 
 .ReadUnities:hover{
     background-color: #6A0606;
+}
+
+.btn{
+    margin: 2% 2%;
+    padding: 1% 2%;
+    background-color: #03414F;
+    border: solid 1px #0c5460;
 }

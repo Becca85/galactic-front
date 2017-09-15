@@ -44,9 +44,7 @@
               <li class="nav-item">
                   <a class="nav-link" href="create-unity.html">Créer une unité</a>
               </li>
-              <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+
           </ul>
         </div>
       </div>
@@ -62,14 +60,32 @@
 
 
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 createUnity">
                     <h3>Sélectionner une planète</h3>
                         <select v-model="selected.planet" class="select" @change="updateDifferences()">
                             <option v-for="planet in planets" v-bind:value="planet" class="optionSelect">{{ planet.name }}</option>
                         </select></br>
+                </div>
                 <!--availableIron:1700, availablePlutonium: 2000, availableGold: 2300-->
+                    <div class="col-md-4 createUnity">
+                        <h3>Sélectionner une unité</h3>
+                        <select v-model="selected.type" class="select" @change="updateDifferences()">
+                            <option v-for="type in types" v-bind:value="type">{{ type.name }}</option>
+                        </select>
+                    </div>
 
-                    <div v-if="selected.planet">
+                        <div class="col-md-4 createUnity">
+                            <h3>Différence</h3>
+                            <div v-if="selected.planet && selected.type">
+
+
+                            </div>
+                        </div>
+            </div>
+
+            <div class="row">
+
+                    <div class="col-md-4 contenuCreate" v-if="selected.planet">
                         <h5 style="margin-top: 2%">Planète : {{selected.planet.name}}</h5><br/>
                         Espace terrestre disponible : {{selected.planet.groundFreeSpace}}<br/>
                         Espace orbital disponible : {{selected.planet.orbitalFreeSpace}}<br/>
@@ -77,43 +93,36 @@
                         Ressource en plutonimum : {{selected.planet.availablePlutonium}}<br/>
                         Ressource en or : {{selected.planet.availableGold}}<br/>
                     </div>
-                </div>
 
 
-                <div class="col-md-4">
-                    <h3>Sélectionner une unité</h3>
-                    <select v-model="selected.type" class="select" @change="updateDifferences()">
-                        <option v-for="type in types" v-bind:value="type">{{ type.name }}</option>
-                    </select>
 
-                    <div v-if="selected.type">
-                        <h5 style="margin-top: 2%">Pour constuire un {{selected.type.name}}, il vous faut</h5><br/>
-                        {{selected.type.size}} de place<br/>
+
+
+                    <div class="col-md-4 contenuCreate" v-if="selected.type">
+                        <h5 style="margin-top: 2%">Pour un {{selected.type.name}}, il faut</h5><br/>
+                        {{selected.type.size}} places<br/>
                         Coût en fer : {{selected.type.ironCost}}<br/>
                         Coût en plutonium : {{selected.type.plutoniumCost}}<br/>
                         Coût en or : {{selected.type.goldCost}}<br/>
                         Temps de construction : {{ formatDelay(selected.type.productionDelay) }}<br/>
 
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <h3>Différence</h3>
-                    <div v-if="selected.planet && selected.type">
-                        <h5 style="margin-top: 2%">Etat de vos finances</h5><br/>
-                        <div></div>
-                        {{differences.placeOnOrbit}}<br/>
-                        {{differences.placeOnEarth}}<br/>
+
+
+                        <div class="col-md-4 contenuCreate">
+                            <h5 class="titreDiff"  v-if ="selected.type && selected.planet">Ressources restantes</h5><br/>
+                        {{differences.place}}<br/>
                         {{differences.diffF}}<br/>
                         {{differences.diffP}}<br/>
                         {{differences.diffO}}<br/>
                     </div>
-                </div>
+
 
             </div>
 
             <div class="row">
-                <div class="col-md-12" text-center style="margin-top: 3%;" v-if="selected.planet && selected.type">
+                <div class="col-md-12 reponseCalcul" style="text-align: center;" v-if="selected.planet && selected.type">
                     <div v-if="!buildIsPossible()" class="error">Construction impossible!</div>
                     <button class="btn btn-success btnCreate" @click="create()" :disabled="!buildIsPossible()">Créer</button>
                 </div>
