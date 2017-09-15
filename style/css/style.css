@@ -19,7 +19,7 @@ td, th {
     text-align: left;
     border: 1px solid #ccc;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
     .container {
         max-width: 1500px !important;
     }
@@ -71,6 +71,10 @@ table {
     box-shadow: 1px 1px 12px 3px teal;
 }
 
+.backgroundBody{
+    background-color: #A41E2E;;
+}
+
 /* =====================================================
 =======================PAGE CONNEXION===================
  ======================================================*/
@@ -83,7 +87,7 @@ table {
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin: auto;
-    margin-top: 8%;
+    margin-top: 9%;
     background-color: white;
 }
 
@@ -93,7 +97,7 @@ table {
     background-repeat: no-repeat;
     background-size: cover;
     height: 93vh;
-    margin: 0px;
+    margin: auto;
 }
 
 .divRowConnexion{
@@ -114,6 +118,9 @@ li a:active {
 li a:hover {
      color: #C63B4B;
      text-decoration: none;
+}
+.envoyer:hover {
+    background-color: #A41E2E;
 }
 
 

@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b919d7b8-9ce6-4f94-acbb-4bae52d24c55" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/connexion.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create-unity.html" afterPath="$PROJECT_DIR$/create-unity.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/components/create-unity.js" afterPath="$PROJECT_DIR$/js/components/create-unity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connexion.html" afterPath="$PROJECT_DIR$/connexion.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/css/style.css" afterPath="$PROJECT_DIR$/style/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-planets.html" afterPath="$PROJECT_DIR$/view-planets.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view-unities.html" afterPath="$PROJECT_DIR$/view-unities.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,24 +32,24 @@
       <file leaf-file-name="connexion.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/connexion.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="66" />
+            <state relative-caret-position="133">
+              <caret line="121" column="68" lean-forward="false" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="167">
+              <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -119,6 +113,10 @@
       <find>user</find>
       <find>conte</find>
       <find>disa</find>
+      <find>background</find>
+      <find>body</find>
+      <find>connex</find>
+      <find>btn</find>
     </findStrings>
     <replaceStrings>
       <replace>vendor/vue/vue.js</replace>
@@ -148,10 +146,10 @@
         <option value="$PROJECT_DIR$/js/script.js" />
         <option value="$PROJECT_DIR$/view-unities.html" />
         <option value="$PROJECT_DIR$/view-planets.html" />
-        <option value="$PROJECT_DIR$/connexion.html" />
         <option value="$PROJECT_DIR$/create-unity.html" />
-        <option value="$PROJECT_DIR$/style/css/style.css" />
         <option value="$PROJECT_DIR$/js/components/create-unity.js" />
+        <option value="$PROJECT_DIR$/connexion.html" />
+        <option value="$PROJECT_DIR$/style/css/style.css" />
       </list>
     </option>
   </component>
@@ -800,12 +798,12 @@
       <workItem from="1505207732832" duration="15237000" />
       <workItem from="1505287358528" duration="20493000" />
       <workItem from="1505373747611" duration="20211000" />
-      <workItem from="1505459874848" duration="6745000" />
+      <workItem from="1505459874848" duration="7448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62686000" />
+    <option name="totallyTimeSpent" value="63389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1612" height="876" extended-state="0" />
@@ -1172,22 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/connexion.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" column="66" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/components/create-unity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1205,6 +1187,22 @@
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connexion.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="121" column="68" lean-forward="false" selection-start-line="121" selection-start-column="68" selection-end-line="121" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
