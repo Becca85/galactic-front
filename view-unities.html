@@ -53,11 +53,11 @@
 
           <div class="col-md-12 text-center" >
               <h1 class="titlePage">Liste des unités</h1>
-              <h3 class="selectPlanet">Sélectionner une planète</h3>
+              <h3 class="selectPlanet">Sélectionner une planète  <button class="btn btn-sm btn-success ReadUnities" @click="refresh()">Afficher les unités</button></h3>
               <select v-model="selected.planet" class="select" @change="refresh()">
                   <option v-for="planet in planets" :value="planet" class="optionSelect">{{ planet.name }}</option>
               </select></br>
-              <button class="btn btn-success ReadUnities" @click="refresh()">Afficher les unités</button>
+             
 
 
               <div class="col-lg-12 text-center">
